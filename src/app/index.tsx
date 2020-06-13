@@ -13,6 +13,7 @@ import { Switch, Route, BrowserRouter } from 'react-router-dom';
 import { GlobalStyle } from '../styles/global-styles';
 
 import { HomePage } from './containers/HomePage/Loadable';
+import { Page2 } from './containers/Page2/Loadable';
 import { NotFoundPage } from './containers/NotFoundPage/Loadable';
 
 export function App() {
@@ -27,6 +28,7 @@ export function App() {
 
       <Switch>
         <Route exact path={process.env.PUBLIC_URL + '/'} component={HomePage} />
+        <Route path={process.env.PUBLIC_URL + '/page2'} component={Page2} />
         <Route component={NotFoundPage} />
       </Switch>
       <GlobalStyle />

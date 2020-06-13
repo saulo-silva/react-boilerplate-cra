@@ -15,6 +15,7 @@ import FontFaceObserver from 'fontfaceobserver';
 import * as serviceWorker from 'serviceWorker';
 
 import 'sanitize.css/sanitize.css';
+import './styles/styles.css';
 
 // Initialize languages
 import './locales/i18n';
